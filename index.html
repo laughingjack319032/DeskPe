@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,100;0,400;1,100;1,400&family=Noto+Serif+Lao:wght@100;200&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DeskPe</title>
+
+    <style>
+        /* Loader styles */
+        .loader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1.5s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+        <h2>&nbsp; Loading...</h2>
+    </div>
+
+    <div class="header">
+        <div id="header-logo">
+            <a href="https://anandk3012.github.io/DeskPe/">
+                <img src="deskPELOGO.jpg" alt="">
+                <span>DeskPe</span>
+            </a>
+        </div>
+        <div id="header-button">
+            <a href="#footer">Contact Us</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="mainbody-1">
+
+        <div class="display-1">
+            <h1>Streamline, Empower and Transform all your corporate expenses</h1>
+        </div>
+        <!-- <div class="display-box"> -->
+            <div class="display-3">
+                <img src="Laptop DashBoard 2.png" alt="App">
+            <!-- </div> -->
+            <!-- <div class="display-2">
+                <p>Make your company payments and reimbursements
+                    hassle-free and quickly</p>
+            </div> -->
+
+        </div>
+    </div>
+    <div class="mainbody-2">
+        <div class="about-1">
+            <div class="box-1">
+                <h2>Who are we?</h2>
+                <p>DeskPe is a wallet based payment app tailored specifically for
+                    companies,where the company will have complete control
+                    over the employee's wallet and expense tracking in real time.
+                </p>
+            </div>
+            <div class="box-2">
+                <h2>What we provide?</h2>
+                <p>Provide the employees easy payment options
+                    including UPI,mobile number, receipt scanning,
+                    automated approvals, and reporting features.
+
+                </p>
+            </div>
+        </div>
+        <div class="about-2">
+            <div class="why">
+                <h1>Why Us?</h1>
+            </div>
+            <div class="why-icons">
+                <div id="icon-1" class="icons">
+                    <img src="time saving png.png" alt="">
+                    <span>Helps your business save a lot of time by providing a quick and automated solution.</span>
+                </div>
+                <div id="icon-2" class="icons">
+                    <img src="cost effective png.png" alt="">
+                    <span>Helps your business reduce expenses as it is much cheaper than corporate cards</span>
+                </div>
+                <div id="icon-3" class="icons">
+                    <img src="easy to use png.png" alt="">
+                    <span>Easy-to -use simplified payment app specially tailored for corporates.</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="mainbody-3">
+        <div class="features">
+
+            <div class="slider" id="slider-1">
+                <div class="for-employee" style="margin:15px">
+                    <h2>Convenience for Employees</h2>
+                </div>
+                <div class="slide-track">
+                    <a class="prev-employee" onclick="plusSlides_employee(-4)">&#10094;</a>
+                    <div class="slide_employee">
+                        <span>Easy Payment options</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Recharged wallet</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Automated Approvals</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Manage expenses</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Compliance verification</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Invoice Scanning</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Expense Report</span>
+                    </div>
+                    <div class="slide_employee">
+                        <span>Maintain records</span>
+                    </div>
+
+                    <a class="next-employee" onclick="plusSlides_employee(4)">&#10095;</a>
+                </div><br>
+                <div style="text-align: center">
+                    <span class="dot-employee" onclick="currentSlide_employee(4)"></span>
+                    <span class="dot-employee" onclick="currentSlide_employee(8)"></span>
+
+                </div>
+
+            </div>
+            <div class="slider" id="slider-2">
+                <div class="for-company" style="margin:15px 15px 15px 0">
+                    <h2>Vantage for Company</h2>
+                </div>
+                <div class="slide-track">
+                    <a class="prev-company" onclick="plusSlides_company(-4)">&#10094;</a>
+                    <div class="slide_company">
+                        <span>Make easy payment</span>s
+                    </div>
+                    <div class="slide_company">
+                        <span>Track expenses in real time</span>
+                    </div>
+                    <div class="slide_company">
+                        <span>Credit wallet as required</span>
+                    </div>
+                    <div class="slide_company">
+                        <span>Access to all expenses</span>
+                    </div>
+                    <div class="slide_company">
+                        <span>Complete access over employees wallet</span>
+                    </div>
+                    <div class="slide_company">
+                        <span>Expense reports and industry benchmarks</span>
+                    </div>
+                    <div class="slide_company">
+                        <span>Customizable company structure and compliance policy</span>
+                    </div>
+                    <div class="slide_company">
+                        <span>Integration with other systems</span>
+                    </div>
+
+                    <a class="next-company" onclick="plusSlides_company(4)">&#10095;</a>
+                </div><br>
+                <div style="text-align: center">
+                    <span class="dot-company" onclick="currentSlide_company(4)"></span>
+                    <span class="dot-company" onclick="currentSlide_company(8)"></span>
+                </div>
+            </div>
+            <div class="benefits">
+                <h2 id="feat-head">Unique Features</h2>
+                <div id="benefits">
+                    <div class="slide_benefits"><span>Travel Booking
+                        </span></div>
+                    <div class="slide_benefits"><span>Gift Vouchers</span></div>
+                    <div class="slide_benefits"><span>Pay Bills</span></div>
+                    <div class="slide_benefits"><span>Subscriptions</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="googleForm">
+        <span>
+            <h2 id="inquiries-heading">
+                Don't get left out in digitising your business expenses and grow faster.<br>
+            </h2><br>
+            <span>
+                For inquiries and more details, reach out to us here:
+            </span>
+        </span>
+    </div>
+    <iframe
+        src="https://script.google.com/macros/s/AKfycbyrbwikUjf_TWAASkjUFBCltkclP-LN6PtKcXPEK5I6I6A6oyuREfmgqK6nsEh3S7Hq/exec"
+        frameborder="0" height="1100" width="100%" scrolling="no">
+    </iframe>
+    <div class="footer" id="footer">
+        <div id="header-logo">
+            <span><a href="https://anandk3012.github.io/DeskPe/"> <img src="deskPELOGO.jpg" style="width:70%" alt="">
+                </a></span>
+        </div>
+        <div class="contact-info">
+            <p>Contact us:<br>
+                Ph No. : +91 89794 71587<br>
+                Email : deskpe@gmail.com
+            </p>
+        </div>
+    </div>
+        <script>
+            plusSlides_company(4);
+            plusSlides_employee(4);
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="index.js" defer></script>
+    
+    <script>
+
+        // Employee Slideshow
+        let slideIndex_employee = 4;
+
+        showSlides_employee(slideIndex_employee);
+
+        // Next/previous controls
+        function plusSlides_employee(n) {
+            showSlides_employee((slideIndex_employee += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide_employee(n) {
+            showSlides_employee((slideIndex_employee = n));
+        }
+
+        function showSlides_employee(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide_employee");
+            let dots = document.getElementsByClassName("dot-employee");
+
+            // Ensure that the slideIndex_employee is within valid bounds
+            if (n >= slides.length) {
+                slideIndex_employee = 0; // Reset to the first set of 4 slides
+            }
+            if (n < 0) {
+                slideIndex_employee = slides.length - 4; // Set to the last set of 4 slides
+            }
+
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Display the 4 slides starting from slideIndex_employee
+            for (i = slideIndex_employee; i < slideIndex_employee + 4; i++) {
+                if (slides[i]) {
+                    slides[i].style.display = "flex";
+                    slides[i].style.alignitems = "center"
+                    slides[i].style.textalign = "center"
+                }
+            }
+
+            // Remove "active" class from all dots
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            // Add "active" class to the currently displayed dot
+            dots[Math.floor(slideIndex_employee / 4)].className += " active";
+        }
+    </script>
+    <script>
+        // Company Slideshow
+        let slideIndex_company = 4;
+        showSlides_company(slideIndex_company);
+        function plusSlides_company(n) {
+            showSlides_company((slideIndex_company += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide_company(n) {
+            showSlides_company((slideIndex_company = n));
+        }
+
+
+        function showSlides_company(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide_company");
+            let dots = document.getElementsByClassName("dot-company");
+
+            // Ensure that the slideIndex_company is within valid bounds
+            if (n >= slides.length) {
+                slideIndex_company = 0; // Reset to the first set of 4 slides
+            }
+            if (n < 0) {
+                slideIndex_company = slides.length - 4; // Set to the last set of 4 slides
+            }
+
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Display the 4 slides starting from slideIndex_company
+            for (i = slideIndex_company; i < slideIndex_company + 4; i++) {
+                if (slides[i]) {
+                    slides[i].style.display = "flex";
+                    slides[i].style.alignitems = "center"
+                    slides[i].style.textalign = "center"
+                }
+            }
+
+            // Remove "active" class from all dots
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            // Add "active" class to the currently displayed dot
+            dots[Math.floor(slideIndex_company / 4)].className += " active";
+        }
+
+    </script>
+        <!-- Rest of your HTML content -->
+
+    <script>
+        // Hide the loader after 1.5 seconds (1500 milliseconds)
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                var loader = document.getElementById("loader");
+                if (loader) {
+                    loader.style.display = "none";
+                }
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>
